@@ -90,11 +90,11 @@ snippet mstp
 		}
 	)
 snippet mdtp
-	const mapDispatchToProps = dispatch => (
-		{...bindActionCreators({
+	const mapDispatchToProps = dispatch => ({
+		...bindActionCreators({
 				${1}
 			}
-		)}
+		), dispatch}
 	)
 snippet rc
 	class ${1} extends Component{
